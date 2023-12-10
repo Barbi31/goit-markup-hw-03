@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,12 +20,12 @@
     <title>Portofolio</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="hero-header navbar-backround hero-container">
+      <nav class="navbar-align">
         <a class="logo link" href="./index.html"
           >Web<span class="logo-link" style="color: #2e2f42">Studio</span></a
         >
-        <ul class="list">
+        <ul class="list navbar">
           <li><a class="nav-link link" href="./index.html">Studio</a></li>
           <li>
             <a class="nav-link link" href="./portfolio.html">Portfolio</a>
@@ -27,8 +34,8 @@
         </ul>
       </nav>
       <!-- Address -->
-      <address class="address-style">
-        <ul class="list">
+      <address class="address-style hero-header-cta-align logo-space">
+        <ul class="list hero-header-cta">
           <li>
             <a
               class="address-mail nav-link link"
@@ -46,33 +53,33 @@
     </header>
     <main>
       <!-- button section -->
-      <section>
+      <section class="section-portfolio">
         <h1 hidden>Filter section</h1>
-        <ul class="list">
-          <li>
+        <ul class="list filter-buttons">
+          <li class="filter-button">
             <button type="button" class="filter-button-list link">All</button>
           </li>
-          <li>
+          <li class="filter-button">
             <button type="button" class="filter-button-list link">
               Web Site
             </button>
           </li>
-          <li>
+          <li class="filter-button">
             <button type="button" class="filter-button-list link">App</button>
           </li>
-          <li>
+          <li class="filter-button">
             <button type="button" class="filter-button-list link">
               Design
             </button>
           </li>
-          <li>
+          <li class="filter-button">
             <button type="button" class="filter-button-list link">
               Marketing
             </button>
           </li>
         </ul>
-        <ul class="list">
-          <li>
+        <ul class="list project-cards">
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/banking-app-interface-img.jpg"
@@ -84,7 +91,7 @@
               <p class="content">App</p>
             </a>
           </li>
-          <li>
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/payment-img.jpg"
@@ -96,7 +103,7 @@
               <p class="content">Marketing</p>
             </a>
           </li>
-          <li>
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/meditation-app-img.jpg"
@@ -108,7 +115,7 @@
               <p class="content">App</p>
             </a>
           </li>
-          <li>
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/taxi-service-img.jpg"
@@ -120,7 +127,7 @@
               <p class="content">Marketing</p>
             </a>
           </li>
-          <li>
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/screen-illustrations-img.jpg"
@@ -132,7 +139,7 @@
               <p class="content">Design</p>
             </a>
           </li>
-          <li>
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/online-courses-img.jpg"
@@ -144,7 +151,7 @@
               <p class="content">Marketing</p>
             </a>
           </li>
-          <li>
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/instagram-stories-concept-img.jpg"
@@ -156,7 +163,7 @@
               <p class="content">Design</p>
             </a>
           </li>
-          <li>
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/organic-food-img.jpg"
@@ -168,7 +175,7 @@
               <p class="content">Web Site</p>
             </a>
           </li>
-          <li>
+          <li class="card-content">
             <a class="link" href="">
               <img
                 src="./images/fresh-coffee-img.jpg"
