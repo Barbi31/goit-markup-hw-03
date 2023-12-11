@@ -36,8 +36,7 @@ body {
 .container{
   width: 1158px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 .section-about-align{
@@ -295,7 +294,6 @@ display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
-
 }
 .card-content{
   flex-basis: calc((100%-48px)/3);
