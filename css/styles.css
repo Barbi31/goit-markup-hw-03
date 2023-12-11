@@ -9,7 +9,7 @@
   --logo-font-family: "Raleway", sans-serif;
   --ocean-blue: #404bbf;
   --footer-white: #F4F4FD;
-  --navbar-backround: #E7E9FC;
+  --navbar-backround: #E7E9FC; 
 }
 *{
   box-sizing: border-box;
@@ -17,11 +17,14 @@
 *{
   margin: 0;
 }
+.visually-hidden{
+  visibility: hidden;
+}
 body {
   font-family: var(--text-font-family);
   color: var(--drak-grey);
   background-color: var(--white-color);}
-.hero-container{
+.container{
   width: 1158px;
   margin: auto;
   padding-left: 15px;
@@ -38,7 +41,7 @@ body {
   gap: 24px;
 }
 .section-about-list{
-  width: calc((100% - 72px) / 4);
+  calc((100% - 3 * 24px) / 4);
 }
 .about-title{
   margin-bottom: 8px;
@@ -52,7 +55,7 @@ body {
 .hero-header{
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 /* logo */
@@ -182,7 +185,7 @@ gap: 40px;
   }
   .service-button{
     display: block;
-    min-width: 169px
+    min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
@@ -199,7 +202,7 @@ gap: 40px;
   gap: 24px;
 }
 .scetion-doing-list{
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 3 * 16px) / 3);
 }
 .team-section{
   padding-top: 120px;
@@ -213,8 +216,9 @@ gap: 40px;
   margin-bottom: 72px;
 }
 .section-member{
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px 4px;
+  width: calc((100% - 3 * 24px) / 4);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .our-team-div{
   padding-top: 32px;
@@ -250,10 +254,13 @@ padding-bottom: 120px;
 .filter-button-list:hover {
   color: var(--white-color);
   background-color: var(--ocean-blue);
+  border: 1px solid transparent;
+  
 }
 .filter-button-list:focus {
   color: var(--white-color);
   background-color: var(--ocean-blue);
+  border: 1px solid transparent;
 }
 .filter-buttons{
   display: flex;
@@ -262,8 +269,11 @@ padding-bottom: 120px;
   gap: 24px;
 }
 .filter-button{
-  padding: 12px 24px;
-  border: 1px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px; 
+  padding-right: 24px;
+  border: 1px solid var(--navbar-backround);
   border-radius: 4px;
 }
 .project-cards{
@@ -277,7 +287,7 @@ row-gap: 48px;
 }
 .card-div{
   padding: 32px 16px;
-  border: 1px;
+  border: 1px solid #e7e9fc;
   border-top: none;
 }
 .card-title{
