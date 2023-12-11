@@ -22,20 +22,37 @@ body {
   color: var(--drak-grey);
   background-color: var(--white-color);}
 .hero-container{
-  width: 1440px;
+  width: 1158px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.section{
-  padding: 72px;
-  margin-top: 8px;
+
+.section-about-align{
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-about{
   display: flex;
   justify-content: space-between;
   gap: 24px;
 }
+.section-about-list{
+  width: calc((100% - 72px) / 4);
+}
+.about-title{
+  margin-bottom: 8px;
+}
+.section-what-are-they-doing{
+  padding-bottom: 120px;
+}
+.section-what-are-they-doing-title{
+  margin-bottom: 72px;
+}
 .hero-header{
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px;
 }
 
 /* logo */
@@ -50,7 +67,7 @@ body {
   text decoration: none;
 }
 .logo-space{
-  gap: 76px;
+  margin-right: 76px;
 }
 .logo-link{
   font-family: var(--logo-font-family);
@@ -69,14 +86,20 @@ body {
 /* nav section */
 .navbar{
   display: flex;
-  gap: 40px;
+  align-items: center;
 }
 .navbar-align{
   align-items: center;
   display: flex;
+  gap: 40px;
+  justify-content: space-between;
 }
 .navbar-backround{
   background: var(--navbar-backround);
+}
+.navbar-link{
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .hero-header-cta{
 display: flex;
@@ -84,11 +107,9 @@ gap: 40px;
 }
 .hero-title{
   margin-bottom: 48px;
+  max-width: 496px;
 }
-.hero-header-cta-align{
-  align-items: center;
-  display: flex;
-}
+
 .nav-link {
   color: var(--navy-blue);
   font-size: 16px;
@@ -133,7 +154,8 @@ gap: 40px;
 .hero-content {
   background-color: var(--navy-blue);
   color: var(--white-color);
-  padding: 188px 472px 292px 472px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   flex-grow: 1;
 }
 .hero-font {
@@ -159,9 +181,11 @@ gap: 40px;
   align-content: center;
   }
   .service-button{
-    margin: 48px 160px 188px 160px;
-    weight: 169px;
-    
+    display: block;
+    min-width: 169px
+    height: 56px;
+    border: none;
+    border-radius: 4px;
   }
   
 .order-service-button:hover,
@@ -173,27 +197,42 @@ gap: 40px;
 .section-doing{
   display: flex;
   gap: 24px;
-  align-items: center;
 }
-.section-doing-title{
-  padding: 18px 72px 19px;
+.scetion-doing-list{
+  width: calc((100% - 48px) / 3);
+}
+.team-section{
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-our-team{
   display: flex;
   gap: 24px;
 }
 .section-our-team-title{
-  padding: 120px 195px 72px 195px;
+  margin-bottom: 72px;
 }
 .section-member{
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px 4px;
+}
+.our-team-div{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.our-team-title{
+  text-align: center;
+  margin-bottom: 8px;
+
 }
 .section-member-descripton{
+  text-align: center;
 
 }
 /* portfolio */
 .section-portfolio{
-  width: 1440px;
-height: 2074px;
+padding-top: 96px; 
+padding-bottom: 120px;
 }
 .filter-button-list {
   color: var(--brand-color);
@@ -218,31 +257,31 @@ height: 2074px;
 }
 .filter-buttons{
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 96px 427px 72px 427px;
+  margin-bottom: 72px;
   gap: 24px;
 }
 .filter-button{
-  align-items: center;
-  display: flex;
-  gap: 24px;
-
+  padding: 12px 24px;
+  border: 1px;
+  border-radius: 4px;
 }
 .project-cards{
-  --card-width: 360px;
 display: flex;
 flex-wrap: wrap;
-gap: 24px;
-max-width: calc(var(--card-width) * 3 +24px);
-justify-content: center;
-
+column-gap: 24px;
+row-gap: 48px;
 }
 .card-content{
-  flex-basis: var(--card-width);
-  height: 300px;
-  margin-bottom: 48px;
-  gap: 32;
+  width: calc((100% - 48px) / 3);
+}
+.card-div{
+  padding: 32px 16px;
+  border: 1px;
+  border-top: none;
+}
+.card-title{
+  margin-bottom: 8px;
 }
 /* title, subtitle, content */
 .header {
@@ -263,7 +302,9 @@ color: var(--backround-white);
 .backround-white { 
   background-color: var(--white-color);
 }
-
+.image-b{
+  display: block;
+}
 .subtitle {
   color: var(--navy-blue);
   font-size: 20px;
@@ -283,10 +324,8 @@ color: var(--backround-white);
 }
 .footer {
     background-color: var(--navy-blue);
-    width: 1440px;
-    height: 312px;
-    padding: 101.5px;
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-paragraph {
   color: var(--footer-white);
@@ -295,14 +334,15 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
-margin-right: 1020px;
-margin-bottom: 100px;
-margin-top: 17.5px;
-width: 264px;
-
+max-width: 264px;
 }
 .footer-logo{
   margin-bottom: 17.5px;
 
 }
+.footer-link{
+  display: inline-block;
+  margin-bottom: 16px;
+}\
+
 
