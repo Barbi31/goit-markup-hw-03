@@ -35,7 +35,7 @@ body {
   background-color: var(--white-color);}
 .container{
   width: 1158px;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -120,9 +120,10 @@ display: flex;
 gap: 40px;
 }
 .hero-title{
+  margin: 0 auto;
   margin-bottom: 48px;
   max-width: 496px;
-  align-items: center;
+  text-align: center;
 }
 
 .nav-link {
@@ -172,6 +173,7 @@ gap: 40px;
   padding-top: 188px;
   padding-bottom: 188px;
   flex-grow: 1;
+  text-align: center;
 }
 .hero-font {
   font-size: 56px;
@@ -201,6 +203,7 @@ gap: 40px;
     height: 56px;
     border: none;
     border-radius: 4px;
+    margin: 0 auto;
   }
   
 .order-service-button:hover,
@@ -292,9 +295,10 @@ display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
+
 }
 .card-content{
-  flex-basis:calc((100%-48)/3);
+  padding-bottom: 32px;
 }
 .card-div{
   padding: 32px 16px;
