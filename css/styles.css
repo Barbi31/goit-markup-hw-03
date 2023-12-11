@@ -298,7 +298,7 @@ row-gap: 48px;
 
 }
 .card-content{
-  padding-bottom: 32px;
+  width: calc((100%-48px)/3);
 }
 .card-div{
   padding: 32px 16px;
