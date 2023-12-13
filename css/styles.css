@@ -65,7 +65,6 @@ body {
 .hero-header{
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--white-color);
   height: 72px;
 }
 
@@ -109,7 +108,8 @@ body {
   justify-content: space-between;
 }
 .navbar-backround{
-  background: var(--navbar-backround);
+  background: var(--white-color);
+  border-bottom: 1px solid #e7e9fc;
 }
 .navbar-link{
   padding-top: 24px;
