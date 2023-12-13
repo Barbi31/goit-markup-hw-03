@@ -38,6 +38,9 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.portfolio-div-container{
+  padding: 0 0;
+}
 
 .section-about-align{
   padding-top: 120px;
